@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Угадай число</title>
+        <script>
+            function getRandomNumber(parametr) {
+                return Math.round(Math.random() * parametr)
+            }
+
+            const number = getRandomNumber(10);
+        
+            const otvet = prompt("Я загадал число от 1 до 10, попробуй угадать его!")
+
+            if (otvet > number) {
+                alert(`Твое число больше, я загадал число ${number}`)
+            }
+            if (otvet < number) {
+                alert(`Твое число меньше, я загадал число ${number}`)
+            }
+            if (otvet == number) {
+                alert(`Правильно, я загадал число ${number}`)
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
